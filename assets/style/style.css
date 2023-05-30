@@ -370,3 +370,31 @@ footer>.social :nth-of-type(5){
 .article>article>div>figure:hover::after{
     top: 0;left: 0;
 }
+
+/* index */
+
+.home-section{
+    display: flex;
+    flex-direction: row;
+    background-color: #569DAA;
+    margin: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0px 0px 20px 20px #87CBB9;
+}
+
+.home-section :nth-of-type(1) *{
+    padding: 20px;
+}
+
+.home-section :nth-last-of-type(1){
+    width: 100%;
+}
+
+.home-section :first-child>*{
+    padding: 20px;
+}
+
