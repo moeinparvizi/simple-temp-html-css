@@ -249,6 +249,8 @@ footer>.social>span{
 .social p {
     font-size: 40px;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
 
 .social:hover p{
@@ -274,4 +276,97 @@ footer>.social :nth-of-type(5){
 
 .about>h2{
     text-align: center;
+}
+
+/* articles */
+
+.article{
+    margin: 40px;
+}
+
+.article>article{
+    display: flex;
+    flex-direction: row;
+    background-color: #B9EDDD;
+    justify-content: space-between;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.article>article:hover{
+    box-shadow: 0px 0px 30px 20px #87CBB9;
+}
+
+.text-article{
+    width: 50%;
+}
+
+.text-article:hover{
+    text-shadow: 10px 10px 5px #fff;
+}
+
+.text-article h3{
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.text-article:hover h3{
+    word-spacing: 4px;
+}
+
+.text-article>*{
+    padding: 20px;
+    width: 100%;
+}
+
+.article>article :nth-of-type(2){
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    overflow: hidden;
+}
+
+.article>article>div>figure{
+    width: 82%;
+    text-align: center;
+    position: relative;
+
+}
+
+.article>article>div>figure>img{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+}
+
+.article>article>div>figure::after{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    opacity: 30%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.article>article>div>figure:hover::after{
+    top: 0;left: 0;
 }
