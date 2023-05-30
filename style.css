@@ -105,13 +105,16 @@ body {
 /*form design*/
 
 form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 100px auto;
-    display: inline;
-    position: absolute;
-    top: 100px;
-    left: 40%;
+    position: relative;
     background-color: #87CBB9;
     border-radius: 20px;
+    width: 28%;
+    position: relative;
+    padding: 20px 0px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -150,14 +153,11 @@ input[type="email"]{
 }
 
 form>:nth-last-child(2){
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 input[type="submit"]{
     padding: 20px;
-    position: absolute;
-    top: 80%;
-    left: 32%;
     background-color: #577D86;
     border: none;
     border-radius: 10px;
@@ -171,6 +171,9 @@ input[type="submit"]{
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    position: absolute;
+    top: 83%;
+    left: 36%;
 }
 
 input[type="submit"]:hover{
@@ -182,4 +185,9 @@ input[type="submit"]:hover{
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+}
+
+footer{
+    background-color: #E3F4F4;
+    position: relative;
 }
